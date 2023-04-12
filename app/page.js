@@ -1,12 +1,15 @@
-import React from "react";
-
-const Page = () => {
+import Link from "next/link";
+const HomePage = () => {
   return (
     <div>
-      <p>yes lad</p>
-      <p>welcome to next js</p>
+      <p className="text-3xl">Home</p>
+      <ul>
+        <li className="underline">
+          <Link href="/transactions">Transactions</Link>
+        </li>
+      </ul>
     </div>
   );
 };
 
-export default Page;
+export default HomePage;
