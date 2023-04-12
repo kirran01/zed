@@ -1,13 +1,10 @@
 import Link from "next/link";
+import TestComp from "./components/Nav";
 const HomePage = () => {
   return (
     <div>
+      <TestComp />
       <p className="text-3xl">Home</p>
-      <ul>
-        <li className="underline">
-          <Link href="/transactions">Transactions</Link>
-        </li>
-      </ul>
     </div>
   );
 };

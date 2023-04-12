@@ -1,14 +1,11 @@
 import Link from "next/link";
+import TestComp from "../components/Nav";
 
 const TransactionsPage = () => {
     return (
         <div>
+            <TestComp />
             <p className="text-3xl">Transactions</p>
-            <ul>
-                <li className="underline">
-                    <Link href='/'>Home</Link>
-                </li>
-            </ul>
         </div>
     );
 }
