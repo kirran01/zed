@@ -1,13 +1,14 @@
 import Link from "next/link";
-import TestComp from "../components/Nav";
+import Nav from "../components/Nav";
+import ServerPage from "../server/page";
 
-const TransactionsPage = () => {
+
+export default function TransactionsPage() {
     return (
         <div>
-            <TestComp />
+            <Nav />
+            <ServerPage />
             <p className="text-3xl">Transactions</p>
         </div>
     );
 }
-
-export default TransactionsPage;
