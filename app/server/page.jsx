@@ -9,6 +9,7 @@ async function getData() {
         if (res.ok) {
             const data = await res.json();
             console.log(data, '<<<<<<<<<<<<<<<data');
+            return data;
         } else {
             console.log(`Error: ${res.status} ${res.statusText}`);
         }
@@ -19,10 +20,10 @@ async function getData() {
 
 const ServerPage = async () => {
     const data = await getData()
-    console.log(data, 'data')
+    console.log(JSON.stringify(data, null, 2), 'data');
     return (
         <div>
-            page
+            <p>transaction page</p>
         </div>
     );
 }
